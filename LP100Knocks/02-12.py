@@ -3,9 +3,11 @@
 
 import codecs
 
+encode = "utf-8"
+
 def write(source, dest1, dest2):
-    with codecs.open(dest1, "w", "utf-8") as file1, codecs.open(dest2, "w", "utf-8") as file2:
-        for line in codecs.open(source, "r", "utf-8"):
+    with codecs.open(dest1, "w", encode) as file1, codecs.open(dest2, "w", encode) as file2:
+        for line in codecs.open(source, "r", encode):
             cols = line.split("\t")
             file1.write(cols[0] + "\n")
             file2.write(cols[1] + "\n")

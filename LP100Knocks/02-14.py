@@ -5,8 +5,10 @@ import codecs
 import itertools
 import sys
 
+encode = "utf-8"
+
 def top(file_path, n):
-    with codecs.open(file_path, "r", "utf-8") as f:
+    with codecs.open(file_path, "r", encode) as f:
         for line in itertools.islice(f, n):
             print(line, end = "")
 
