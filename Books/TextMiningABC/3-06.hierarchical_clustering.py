@@ -10,7 +10,8 @@ for _ in range(30):
     # random.seed(25) とかで seed を固定化することもできる。
     xlist.append([random.randrange(200), random.randint(20, 300)])
 x = np.array(xlist)
-z = linkage(x, 'single')
+z = linkage(x, 'ward')
+#z = linkage(x, 'single')
 dendrogram(z)
 
 plt.title('Hierarchical Clustering(Tree)')
