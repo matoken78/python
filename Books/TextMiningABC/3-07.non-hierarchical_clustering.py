@@ -41,6 +41,11 @@ irispdtarget = pd.DataFrame(iris.target, columns=['target'])
 #        2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2])
 #print(irispddata)
 #print(irispdtarget)
+# デフォルトで k-means++ になってる。
+# k-means  : 最初のクラスタのランダムな割り振りに大きく依存するため、精度が良くない。
+#            https://ja.wikipedia.org/wiki/K%E5%B9%B3%E5%9D%87%E6%B3%95
+# k-means++: 初期のk個のクラスタ中心は離れている方が良いという考えに基づき、精度が良い。
+#            https://ja.wikipedia.org/wiki/K-means%2B%2B%E6%B3%95
 kmeans = KMeans(n_clusters=3).fit(irispddata)
 
 # axis=1 で横方向の連結
