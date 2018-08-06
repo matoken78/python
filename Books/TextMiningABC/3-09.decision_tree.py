@@ -33,4 +33,4 @@ import pydotplus                    # グラフ化するためのパッケージ
 # clf を graphviz のデータとして出力
 dot_data = tree.export_graphviz(clf, out_file=None)
 graph = pydotplus.graph_from_dot_data(dot_data) # グラフを pdf ファイルに変換
-graph.write_pdf("3-09.gakusei-DecisionTree.pdf")
+graph.write_pdf('3-09.gakusei-DecisionTree.pdf')
