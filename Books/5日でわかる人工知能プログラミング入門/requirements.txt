@@ -1,6 +1,7 @@
 jupyter
 numpy
 pandas
+pandas_ml
 sklearn
 matplotlib
 mglearn
