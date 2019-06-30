@@ -1,0 +1,4 @@
+matplotlib
+mecab-python-windows
+numpy
+pyQt5
