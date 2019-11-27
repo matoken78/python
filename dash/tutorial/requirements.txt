@@ -1,3 +1,5 @@
+flake8
+autopep8
 dash
 dash-daq
 pandas
