@@ -1,3 +1,4 @@
+python-igraph
 matplotlib
 mecab-python-windows
 numpy
