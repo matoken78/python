@@ -1,5 +1,6 @@
-python-igraph
 matplotlib
 mecab-python-windows
 numpy
 pyQt5
+cairocffi
+nltk
